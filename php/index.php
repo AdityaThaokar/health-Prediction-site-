@@ -1,10 +1,12 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="../css/index.css">
+<link rel="stylesheet" type="text/css" href="../css/animate.css">
 <link rel="icon" type="image/png" href="../images/kisaanlogo.png" sizes="96x96">
 <title>Lets Start</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href='https://fonts.googleapis.com/css?family=Cutive' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Alef' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
 <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
@@ -126,6 +128,12 @@ hr {
   from, to { border-color: transparent }
   50% { border-color: orange; }
 }
+.About {
+	-webkit-animation-delay:3s;
+}
+.Start {
+	-webkit-animation-duration:1s;
+}
 </style>
 <script language="JavaScript">
 
@@ -197,8 +205,8 @@ $(document).ready(function (){
 <body><a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
 <div style="background: linear-gradient(rgba(26,26,26,0.2),rgba(26,26,26,0.7)), url('../images/background1.jpg');background-repeat: no-repeat;
     background-position: right top;background-repeat: repeat-x;background-size: 1400px 800px;">
- <div class="header" style="height:100px;box-shadow: 1px 2px 4px 0px #4e4e4f;">
- <p><img src="../images/kisaanlogo.png" width="40px" >Digital Kisaan</p>
+ <div class="header" style="height:70px;background:transparent; ">
+ <p style="font-size:20px;color:white"><i class="fa fa-stethoscope"></i>  MediCare</p>
  <div id="google_translate_element" style="margin-left:1170px;"></div>
 
 <script type="text/javascript">
@@ -207,27 +215,25 @@ function googleTranslateElementInit() {
 }
 </script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
- <ul style="margin-left:600px;"> 
+ <ul style="margin-left:850px;"> 
    <li><a href="index.php"><i class="fa fa-home"></i>&nbsp;Home</a></li>
-  <li><a href="About.php"><i class="fa fa-info-circle"></i>&nbsp;About</a></li>
+   <li><button type="button" onclick="smoothScroll(document.getElementById('about'))"><i class="fa fa-info-circle"></i>&nbsp;About</button></li>
    <li><button type="button" onclick="smoothScroll(document.getElementById('contact'))"><i class="fa fa-phone"></i>&nbsp;Contact</button></li>
-  <li ><a href="current.php"><i class="fa fa-cloud"></i>&nbsp;Weather</a></li>
   <li ><a href="chat.php"><i class="fa fa-comments"></i>&nbsp;Chat</a></li>
-  <li ><a href="videos.php"><i class="fa fa-youtube-play"></i>&nbsp;Farming Tips</a></li>
-  <li ><a href="http://www.agriculturetoday.in"><i class="fa fa-newspaper-o"></i>&nbsp;News</a></li>
+  <li ><a href="videos.php"><i class="fa fa-youtube-play"></i>&nbsp;Health Tips</a></li>
  </div> 
-<div class="Start">
+<div class="Start animated fadeInLeft">
 
-<h2>WELCOME TO DIGITAL KISAAN</h2>
+<h2>WELCOME TO MEDICARE</h2>
 <p>" We, at DigitalKisaan.com, are excited about making life simpler and grocery shopping a 
 breeze! Now you can buy organic food & grocery online at your leisure and from the comfort 
 of your home - no more standing in the long queues at ration shops, provision stores & supermarkets." 
 
 </p>
-<br>
+<br><div class="Start animated jello 5s">
 <a href="./login.php">
-<input type="submit" value="Buy here"></a>
-</div></div> 
+<input type="submit" value="Lets start"></a>
+</div></div></div> 
 <div class="slider"><br><br>
 <!-- @zone - hightlighted -->
 <!--Showshow-->
@@ -279,8 +285,35 @@ of your home - no more standing in the long queues at ration shops, provision st
       </div>
    </div>
 </div>
-<br><br><br><br><br><br>
-
+<br><br><br>
+    <div class="About animated zoomIn" id="about">
+	<div style="width:1200;margin-left:auto;margin-right:auto;">
+		<p style="font-size:30px;font-weight:bold;margin-left:550px;font-family:Roboto;color:#4dd0e1">About</p>
+<h5 style="font-size:20px;font-family:Roboto;">The system provides two login options ,one for farmers and the
+another for the wholesaler. All the user details and passwords are
+stored securely in the database. The wholesaler is provided with the
+option of uploading the products which he/she wish to sell. Then
+he/she has to specify the rate of the item. He/She should also provide a
+certificate of assurance ,stating that the product is unadulterated and
+reliable.The wholesaler has to provide his details along with contact
+and location details for feedback system.<br><br>
+When a farmer logs in he is provide with the list of items available for
+purchasing.He is provided with the actual market rate of the items
+along with what the retailers selling price, so they can easily compare
+the rates.Farmers can also search for items using the search
+feature.The farmers can also check whether the product is reliable or
+not. The has to enter his location to find nearby wholesalers. If there is
+not wholesaler in vicinity ,farmers can check whether other
+wholesalers provide delivery facility using details provided by the
+system.The farmer is also provided with a chat room where he can
+submit his queries or make complaints to the wholesalers. <br><br>
+The system provides list of nearest wholesalers and
+option of delivery of inputs if the store is too far away.It will also provide
+customer care service for proper utilization of products they are buying. The
+system features translate function for easy understanding of text in the portal.</h5>
+ </div>
+		<br><br><br>
+	</div>
 	<div class="afterslide">
 	<img align="middle"src="../images/farmer1.jpg" height="300"><br><br><hr></hr><p align="center">
 	 “The ultimate goal of farming is not the growing of crops, but the cultivation and perfection of human beings.”
@@ -295,10 +328,10 @@ of your home - no more standing in the long queues at ration shops, provision st
 <div class="Contact" id="contact">
 <p style="color:white;"><br><br>
 <img src="../images/toll.png" width="0px"><i class="fa fa-phone"></i>&nbsp;Toll Free 1800-274-3131
-<img src="../images/email.png" width="0px"><i class="fa fa-envelope"></i>&nbsp;DigitalKisaan@service.com
+<img src="../images/email.png" width="0px"><i class="fa fa-envelope"></i>&nbsp;MediCare@service.com
 <img src="../images/franchize.png" width="0px"><i class="fa fa-handshake-o"></i>&nbsp;Franchise
-<br><br><br></p>
-<h4>Copyright © 2017 DigitalKisaan.com. All rights reserved.</h4>
+</p>
+<h4>Copyright © 2018 MediCare.com. All rights reserved.</h4>
 </div>
 </div>
 

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Farming Tips</title>
+	<title>Health Tips</title>
 	<link rel="stylesheet" type="text/css" href="../css/login.css">
 	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="icon" type="image/png" href="../images/kisaanlogo.png" sizes="96x96">
 	<script src="sliderengine/jquery.js"></script>
@@ -12,11 +13,14 @@
     <script src="sliderengine/initslider-1.js"></script>
 </head>
 <body>
-<div style="background: linear-gradient(rgba(26,26,26,0.2),rgba(26,26,26,0.7)), url('../images/background5.jpg');
-background-size:contain,cover;
-background-attachment:scroll;">
-	<div class="header" style="height:100px;box-shadow: 1px 2px 4px 0px #4e4e4f;">
- 	<p><img src="../images/kisaanlogo.png" width="40px" > Farming Tips</p>
+<div style="background: #333333 ">
+<a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+
+ <div class="header" style="height:70px;background:#4dd0e1; ">
+ <p style="font-size:20px;color:white"><i class="fa fa-stethoscope"></i>  MediCare</p>
+<ul style="margin-left:1100px;"> 
+<li><a href="index.php"><i class="fa fa-home"></i>&nbsp;Home</a></li>
+   <li><a href="contact.php"><i class="fa fa-phone"></i>&nbsp;Contact</a></li>
  		<div id="google_translate_element" style="margin-left:1170px;"></div>
 			<script type="text/javascript">
 			function googleTranslateElementInit() {
@@ -61,13 +65,13 @@ background-attachment:scroll;">
     </div>
     <br><br><br><br>
     <div class="Contact" id="contact1">
-	<p style="color:white;">
-	<img src="../images/toll.png" width="0px"><i class="fa fa-phone"></i>&nbsp;Toll Free 1800-274-3131
-	<img src="../images/email.png" width="0px"><i class="fa fa-envelope"></i>&nbsp;DigitalKisaan@service.com
-	<img src="../images/franchize.png" width="0px"><i class="fa fa-handshake-o"></i>&nbsp;Franchise
-	</p>
-	<h4 >Copyright © 2017 DigitalKisaan.com. All rights reserved.</h4>
-	</div>
+<p style="color:white;">
+<img src="../images/toll.png" width="0px"><i class="fa fa-phone"></i>&nbsp;Toll Free 1800-274-3131
+<img src="../images/email.png" width="0px"><i class="fa fa-envelope"></i>&nbsp;MediCare@service.com
+<img src="../images/franchize.png" width="0px"><i class="fa fa-handshake-o"></i>&nbsp;Franchise
+</p>
+<h4 align="center">Copyright © 2018 MediCare.com. All rights reserved.</h4>
+</div>
 </div>
 </body>
 </html>

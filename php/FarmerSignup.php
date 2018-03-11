@@ -6,16 +6,17 @@ include('server.php');
 <link rel="stylesheet" type="text/css" href="../css/index.css">
 <link rel="stylesheet" type="text/css" href="../css/login.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 <link rel="icon" type="image/png" href="../images/kisaanlogo.png" sizes="96x96">
 <title>Signup</title>
 <script type="text/javascript" src="autocomplete.js"></script>
 </head>
 <body> 
-<div style="background: linear-gradient(rgba(26,26,26,0.2),rgba(26,26,26,0.7)), url('../images/background4.jpg');
-background-size:cover;
-background-attachment: scroll;	">
-<div class="header" style="height:100px;box-shadow: 1px 2px 4px 0px #4e4e4f;">
- <p><img src="../images/kisaanlogo.png" width="40px" >Digital Kisaan</p>
+<div style="background: #333333 ">
+<a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+
+ <div class="header" style="height:70px;background:#4dd0e1; ">
+ <p style="font-size:20px;color:white"><i class="fa fa-stethoscope"></i>  MediCare</p>
  <div id="google_translate_element" style="margin-left:1170px;"></div>
 
 <script type="text/javascript">
@@ -24,18 +25,16 @@ function googleTranslateElementInit() {
 }
 </script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
- <ul style="margin-left:900px;"> 
+ <ul style="margin-left:1100px;"> 
   <li><a href="index.php"><i class="fa fa-home"></i>&nbsp;Home</a></li>
-  <li><a href="About.php"><i class="fa fa-info-circle"></i>&nbsp;About</a></li>
    <li><a href="contact.php"><i class="fa fa-phone"></i>&nbsp;Contact</a></li>
-  <li><a href="current.php"><i class="fa fa-cloud"></i>&nbsp;Weather</a></li>
  </div> <br><br>
  <div class="Signup" style="margin-left: 25%;margin-top: 2%;">
   <form method="POST"> <?php include('errors.php'); ?>
      <table cellspacing="5px" cellpadding="5px" align="center">
 <tr >
 <td colspan="2">
-<p align="center">Farmer SignUp</p>
+<p align="center"> SignUp Here</p>
 </td>
 
 <tr>
@@ -90,10 +89,10 @@ function googleTranslateElementInit() {
  <div class="Contact" id="contact1">
 <p style="color:white;">
 <img src="../images/toll.png" width="0px"><i class="fa fa-phone"></i>&nbsp;Toll Free 1800-274-3131
-<img src="../images/email.png" width="0px"><i class="fa fa-envelope"></i>&nbsp;DigitalKisaan@service.com
+<img src="../images/email.png" width="0px"><i class="fa fa-envelope"></i>&nbsp;MediCare@service.com
 <img src="../images/franchize.png" width="0px"><i class="fa fa-handshake-o"></i>&nbsp;Franchise
 </p>
-<h4 >Copyright © 2017 DigitalKisaan.com. All rights reserved.</h4>
+<h4 >Copyright © 2018 MediCare.com. All rights reserved.</h4>
 </div></body>
  </div> </div>
 </html>
