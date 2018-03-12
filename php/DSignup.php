@@ -5,6 +5,7 @@ include('server.php');
 <head>
 <link rel="stylesheet" type="text/css" href="../css/login.css">
 <link rel="stylesheet" type="text/css" href="../css/index.css">
+<link rel="stylesheet" type="text/css" href="../css/animate.css">
 <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" type="image/png" href="../images/kisaanlogo.png" sizes="96x96">
@@ -14,8 +15,7 @@ include('server.php');
 <body> 
 <div style="background: linear-gradient(rgba(26,26,26,0.2),rgba(26,26,26,0.7)),url('../images/background61.jpg ');background-size:contain,cover;background-attachment:fixed;">
 <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
-
- <div class="header" style="height:70px;background:#4dd0e1; ">
+ <div class="header animated fadeInDown" style="height:70px;background:transparent; ">
  <p style="font-size:20px;color:white"><i class="fa fa-stethoscope"></i>  MediCare</p>
  <div id="google_translate_element" style="margin-left:1170px;"></div>
 
@@ -29,7 +29,7 @@ function googleTranslateElementInit() {
   <li><a href="index.php"><i class="fa fa-home"></i>&nbsp;Home</a></li>
    <li><a href="contact.php"><i class="fa fa-phone"></i>&nbsp;Contact</a></li>
  </div>  <br><br><br><br>
- <div class="Signup" style="margin-left: 25%;margin-top: 2%;">
+ <div class="Signup animated fadeInUp" style="margin-left: 25%;margin-top: 2%;">
   <form method="POST"> <?php include('errors.php'); ?>
      <table cellspacing="5px" cellpadding="5px" align="center">
 <tr >

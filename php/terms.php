@@ -4,6 +4,7 @@
 <link rel="stylesheet" type="text/css" href="../css/about.css">
 <link rel="stylesheet" type="text/css" href="../css/index.css">
 <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<link rel="stylesheet" type="text/css" href="../css/animate.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <link rel="icon" type="image/png" href="../images/kisaanlogo.png" sizes="96x96">
@@ -14,7 +15,7 @@
 <div style="background: linear-gradient(rgba(26,26,26,0.2),rgba(26,26,26,0.7)),url('../images/background3.jpg ');background-size:contain,cover;background-attachment:fixed;">
 <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
 
- <div class="header" style="height:70px;background:#4dd0e1; ">
+ <div class="header animated fadeInUp" style="height:70px;background:transparent; ">
  <p style="font-size:20px;color:white"><i class="fa fa-stethoscope"></i>  MediCare</p>
  <div id="google_translate_element" style="margin-left:1170px;"></div>
 
@@ -28,7 +29,7 @@ function googleTranslateElementInit() {
   <li><a href="index.php"><i class="fa fa-home"></i>&nbsp;Home</a></li>
    <li><a href="contact.php"><i class="fa fa-phone"></i>&nbsp;Contact</a></li>
  </div> <br><br>
- <div class="terms">
+ <div class="terms animated fadeInDown">
 <p>Terms and Conditions</p>
 <h5>The Terms and Conditions (T&C) contained herein along with the Privacy Policy and Terms of Use, 
 form an Agreement regulating our relationship with regard to the use of Shree Pesticides & Chemicals’ Agrobioproducts.com (Site) by you.<br>

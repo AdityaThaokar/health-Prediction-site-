@@ -4,6 +4,7 @@
 <link rel="stylesheet" type="text/css" href="../css/about.css">
 <link rel="stylesheet" type="text/css" href="../css/index.css">
 <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<link rel="stylesheet" type="text/css" href="../css/animate.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="icon" type="image/png" href="../images/kisaanlogo.png" sizes="96x96">
 <title>Privacy Policy</title>
@@ -12,7 +13,7 @@
 <div style="background: linear-gradient(rgba(26,26,26,0.2),rgba(26,26,26,0.7)),url('../images/background3.jpg ');background-size:contain,cover;background-attachment:fixed;">
 <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
 
- <div class="header" style="height:70px;background:#4dd0e1; ">
+ <div class="header animated fadeInUp" style="height:70px;background:transparent; ">
  <p style="font-size:20px;color:white"><i class="fa fa-stethoscope"></i>  MediCare</p>
  <div id="google_translate_element" style="margin-left:1170px;"></div>
 
@@ -26,7 +27,7 @@ function googleTranslateElementInit() {
 <li><a href="index.php"><i class="fa fa-home"></i>&nbsp;Home</a></li>
    <li><a href="contact.php"><i class="fa fa-phone"></i>&nbsp;Contact</a></li>
  </div> <br><br>
- <div class="terms">
+ <div class="terms animated fadeInDown">
 <p>Privacy Policy</p>
 <h5>
 We value the trust you place in us. That's why we insist upon the highest standards for secure transactions and customer information privacy. 
@@ -50,7 +51,7 @@ and which fields are optional. You always have the option to not provide informa
  is on our Website or not), which URL you next go to (whether this URL is on our Website or not), your computer browser information, and your IP address.
 </h5>
  </div>
-  <div class="Contact" id="contact1">
+  <div class="Contact " id="contact1">
 <p style="color:white;">
 <img src="../images/toll.png" width="0px"><i class="fa fa-phone"></i>&nbsp;Toll Free 1800-274-3131
 <img src="../images/email.png" width="0px"><i class="fa fa-envelope"></i>&nbsp;MediCare@service.com

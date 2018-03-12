@@ -4,6 +4,7 @@ include('server.php');
 <html>
 <head><link rel="stylesheet" type="text/css" href="../css/about.css">
 <link rel="stylesheet" type="text/css" href="../css/login.css">
+<link rel="stylesheet" type="text/css" href="../css/animate.css">
 <link rel="stylesheet" type="text/css" href="../css/index.css">
 <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,7 +22,7 @@ input[type=submit]:hover{
 <div style="background: linear-gradient(rgba(26,26,26,0.2),rgba(26,26,26,0.7)),url('../images/background9.jpg ');background-size:contain,cover;background-attachment:fixed;">
 <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
 
- <div class="header" style="height:70px;background:#4dd0e1; ">
+ <div class="header animated fadeInUp" style="height:70px;background:transparent; ">
  <p style="font-size:20px;color:white"><i class="fa fa-stethoscope"></i>  MediCare</p>
  <div id="google_translate_element" style="margin-left:1170px;"></div>
 
@@ -35,7 +36,7 @@ function googleTranslateElementInit() {
    <li><a href="index.php"><i class="fa fa-home"></i>&nbsp;Home</a></li>
    <li><a href="contact.php"><i class="fa fa-phone"></i>&nbsp;Contact</a></li>
  </div> <br><br><br><p style="margin-left:550;margin-right:auto;font-size:30px">Contact / Feedback</p>
- <div class="About" style="height:auto;width:700px;margin-left:auto;margin-right:auto;padding:10px;">
+ <div class="About animated fadeInDown" style="height:auto;width:700px;margin-left:auto;margin-right:auto;padding:10px;">
 <h5 style="margin-left:10px;font-family:Roboto;font-size:15px;">
  <div class="flexcontainer"><div>
 <img src="../images/toll.png" width="0px"><i class="fa fa-phone"></i>&nbsp;&nbsp;Toll Free 1800-274-3131<br><br><br>

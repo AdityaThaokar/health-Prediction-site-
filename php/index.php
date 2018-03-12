@@ -205,7 +205,7 @@ $(document).ready(function (){
 <body><a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
 <div style="background: linear-gradient(rgba(26,26,26,0.2),rgba(26,26,26,0.7)), url('../images/background1.jpg');background-repeat: no-repeat;background-attachment:fixed;
     background-position: right top;background-repeat: repeat-x;background-size: 1400px 800px;">
- <div class="header" style="height:70px;background:transparent; ">
+ <div class="header animated fadeInDown" style="height:70px;background:transparent; ">
  <p style="font-size:20px;color:white"><i class="fa fa-stethoscope"></i>  MediCare</p>
  <div id="google_translate_element" style="margin-left:1170px;"></div>
 
