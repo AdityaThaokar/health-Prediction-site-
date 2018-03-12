@@ -32,16 +32,28 @@ function googleTranslateElementInit() {
  <div style="margin-left: 10%;"><?php include('errors.php'); ?></div>
  <div class="flexcontainer">
  <div class="login">
-     <p align="center"> Signin </p>
+     <p align="center"> Sign in as Patient </p>
      <form id="form" name="fForm" action="login.php" onsubmit="return validateFormf()" method="post">
      <input type="text" placeholder="Enter Email Id" name="email"><br><br>
 	 <input type="password" placeholder="Enter password" name="password"><br><br>
      <input  type="submit" value="login" name="login">
    </form>
    <div class="footr">
-     <p>New user ? Click <a href="./FarmerSignup.php">here</a> to create an account</p>  
+     <p>New user ? Click <a href="./PSignup.php">here</a> to create an account</p>  
 	 </div>	
 	 </div>
+
+    <div class="login">
+     <p align="center"> Sign in as Doctor </p>
+     <form id="form" name="fForm" action="login.php" onsubmit="return validateFormf()" method="post">
+     <input type="text" placeholder="Enter Email Id" name="email"><br><br>
+   <input type="password" placeholder="Enter password" name="password"><br><br>
+     <input  type="submit" value="login" name="login">
+   </form>
+   <div class="footr">
+     <p>New user ? Click <a href="./DSignup.php">here</a> to create an account</p>  
+   </div> 
+   </div>
 
  </div><br><br><br><br><br><br><br><br><br><br>
  <div class="Contact" id="contact1">

@@ -36,7 +36,6 @@ function googleTranslateElementInit() {
 <td colspan="2">
 <p align="center"> SignUp Here</p>
 </td>
-
 <tr>
 <td>
 <input type="text" placeholder="Create username*" name="username">
@@ -44,37 +43,20 @@ function googleTranslateElementInit() {
 <td>
 <input type="text" placeholder="Mobile Number*" name="phone">
 </td>
-
+</tr>
 <tr>
 <td>
 <input type="password" placeholder="Enter password*" name="password">
 </td>
 <td>
-<input type="text" placeholder="Aadhar Number*" name="aadhar">
-</td>
-
-<tr>
-<td>
 <input type="password" placeholder="Confirm password*" name="confirmpassword">
 </td>
-<td>
-<input type="text" placeholder="Jandhan Account Number*" name="jandhan">
-</td>
-
+</tr>
 <tr>
 <td>
 <input type="email" placeholder="Enter your email*" name="email">
 </td>
-<td>
-<input type="text" id="location" placeholder="City/District*" name="location">
-</td>
-
 <tr>
-<td>
-<input type="text" id="pincode" placeholder="PIN Code*" name="pincode">
-</td>
-<td>Date of birth* - <input type="date" name="date"></td>
-
 </table>
 
      <input  type="submit" value="Sign Up" name="submit" id="submit">

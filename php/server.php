@@ -3,9 +3,9 @@
 session_start();
 	$errors = array(); 
 
-	$conn = mysqli_connect('localhost', 'root', '', 'digital_kisan') or die ("could not connect to mysql"); 
+	$conn = mysqli_connect('localhost', 'root', '', 'medicare') or die ("could not connect to mysql"); 
 
-	//signup for farmers
+	//signup for patient
 	if (isset($_POST['submit'])) {
 
 		$username = $_POST['username'];
@@ -13,37 +13,25 @@ session_start();
 		$email = $_POST['email'];
 		$confirmpassword=$_POST['confirmpassword'];
 		$phone =$_POST['phone'];
-		$aadhar = $_POST['aadhar'];
-		$jandhan = $_POST['jandhan'];
-		$location = $_POST['location'];
-		$date = $_POST['date'];
-		$pincode = $_POST['pincode'];
-	
 		
 		if (empty($username)) { array_push($errors, "username is required."); }
 		if (empty($password)) { array_push($errors, "password is required."); }
 		if (empty($confirmpassword)) { array_push($errors, "confirm password is required."); }
 		if (empty($phone)) { array_push($errors, "Phone number is required."); }
-		if (empty($aadhar)) { array_push($errors, "aadhar is required."); }
-		if (empty($jandhan)) { array_push($errors, "jandhan is required."); }
-		if (empty($location)) { array_push($errors, "location is required."); }
-		if (empty($date)) { array_push($errors, "date is required."); }
-		if (empty($pincode)) { array_push($errors, "pincode is required."); }
-
 		if ($password != $confirmpassword) {
 			echo "<script>alert('The two passwords do not match.')</script>";
 		}
 
 		if (count($errors) == 0) {
-		$query = "INSERT INTO farmerdetails (username,password,email,phone,aadhar,jandhan,location,date_now,pincode) 
-		VALUES('$username','$password','$email','$phone','$aadhar','$jandhan','$location','$date','$pincode')";
+		$query = "INSERT INTO patient (name,phoneno,email,password) 
+		VALUES('$username','$phone','$email','$password')";
 		$sql = mysqli_query($conn, $query);
 		echo "<script>alert('Succefully registered.')</script>";
 		}	
 	}
 
 
-	//signup for wholesaler
+	//signup for dcotor
 	if (isset($_POST['wsubmit'])) {
 
 		$username = $_POST['username'];
@@ -51,37 +39,26 @@ session_start();
 		$email = $_POST['email'];
 		$confirmpassword=$_POST['confirmpassword'];
 		$phone =$_POST['phone'];
-		$aadhar = $_POST['aadhar'];
-		$shopid = $_POST['shopid'];
-		$location = $_POST['location'];
-		$date = $_POST['date'];
-		$pincode = $_POST['pincode'];
-	
 		
 		if (empty($username)) { array_push($errors, "username is required."); }
 		if (empty($password)) { array_push($errors, "password is required."); }
 		if (empty($confirmpassword)) { array_push($errors, "confirm password is required."); }
 		if (empty($phone)) { array_push($errors, "Phone number is required."); }
-		if (empty($aadhar)) { array_push($errors, "aadhar is required."); }
-		if (empty($shopid)) { array_push($errors, "shop id is required."); }
-		if (empty($location)) { array_push($errors, "location is required."); }
-		if (empty($date)) { array_push($errors, "date is required."); }
-		if (empty($pincode)) { array_push($errors, "pincode is required."); }
 
 		if ($password != $confirmpassword) {
 			echo "<script>alert('The two passwords do not match.')</script>";
 		}
 
 		if (count($errors) == 0) {
-		$query = "INSERT INTO salerdetails (username,password,email,phone,aadhar,shopid,location,date_now,pincode) 
-		VALUES('$username','$password','$email','$phone','$aadhar','$shopid','$location','$date','$pincode')";
+		$query = "INSERT INTO doctor (name,phoneno,email,password) 
+		VALUES('$username','$phone','$email','$password')";
 		$sql = mysqli_query($conn, $query);
 		echo "<script>alert('Succefully registered.')</script>";
 		}	
 	}
 
 
-	// farmer login
+	// patient login
 	if (isset($_POST['login'])) {
 
 		$email = $_POST['email'];
@@ -91,14 +68,13 @@ session_start();
 	    if (empty($password)) { array_push($errors, "Password is required."); }
 
 		if (count($errors) == 0) {
-			$query = "SELECT * FROM farmerdetails WHERE email='$email' AND password='$password' ";
+			$query = "SELECT * FROM patient WHERE email='$email' AND password='$password' ";
 			$results = mysqli_query($conn, $query);
 			$arr=mysqli_fetch_array($results);
 			if (mysqli_num_rows($results) == 1) {
 				$_SESSION['email'] = $email;
 				$_SESSION['id'] = $arr['farmerid'];
-				$_SESSION['location'] = $arr['location'];
-				$_SESSION['username'] = $arr['username'];
+				$_SESSION['username'] = $arr['name'];
 				header('location: main.php');
 			}else {	
 				array_push($errors, "Wrong username/password combination");
@@ -107,7 +83,7 @@ session_start();
 	}
 	
 
-	//wholesaler login
+	//doctor login
 	if (isset($_POST['loginw'])) {
 
 		$emailw = $_POST['emailw'];
@@ -117,14 +93,13 @@ session_start();
 	    if (empty($passwordw)) { array_push($errors, "Password is required."); }
 
 		if (count($errors) == 0) {
-			$query = "SELECT * FROM salerdetails WHERE email='$emailw' AND password='$passwordw' ";
+			$query = "SELECT * FROM doctor WHERE email='$emailw' AND password='$passwordw' ";
 			$results = mysqli_query($conn, $query);
 			$arr=mysqli_fetch_array($results);
 			if (mysqli_num_rows($results) == 1) {
 				$_SESSION['email'] = $emailw;
 				$_SESSION['location'] = $arr['location'];
-				$_SESSION['id'] = $arr['id'];
-				$_SESSION['username'] = $arr['username'];
+				$_SESSION['username'] = $arr['name'];
 				header('location: wprofile.php');
 			}else {	
 				array_push($errors, "Wrong username/password combination");
