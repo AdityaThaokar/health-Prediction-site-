@@ -203,7 +203,7 @@ $(document).ready(function (){
 </script>
 </head> 
 <body><a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
-<div style="background: linear-gradient(rgba(26,26,26,0.2),rgba(26,26,26,0.7)), url('../images/background1.jpg');background-repeat: no-repeat;
+<div style="background: linear-gradient(rgba(26,26,26,0.2),rgba(26,26,26,0.7)), url('../images/background1.jpg');background-repeat: no-repeat;background-attachment:fixed;
     background-position: right top;background-repeat: repeat-x;background-size: 1400px 800px;">
  <div class="header" style="height:70px;background:transparent; ">
  <p style="font-size:20px;color:white"><i class="fa fa-stethoscope"></i>  MediCare</p>
@@ -334,10 +334,10 @@ of your home - no more standing in the long queues at ration shops, provision st
    </div>
 </div>
 <br><br><br>
-    <div class="About animated zoomIn" id="about">
+    <div style="background: linear-gradient(rgba(26,26,26,0.2),rgba(26,26,26,0.7)), url('../images/background3.jpg');background-repeat: no-repeat;background-attachment:fixed" class="About " id="about">
 	<div style="width:1200;margin-left:auto;margin-right:auto;">
-		<p style="font-size:30px;font-weight:bold;margin-left:550px;font-family:Roboto;color:#4dd0e1">About</p><hr style="width:100px"></hr>
-<h5 style="font-size:14px;font-family:Roboto;"><p style="font-size:44px;">...</p>The system provides two login options ,one for farmers and the
+		<p style="font-size:30px;font-weight:bold;margin-left:550px;font-family:Roboto;color:#4dd0e1">About</p>
+<h5 style="font-size:14px;font-family:Roboto;color:white"><p style="font-size:44px;">...</p>The system provides two login options ,one for farmers and the
 another for the wholesaler. All the user details and passwords are
 stored securely in the database. The wholesaler is provided with the
 option of uploading the products which he/she wish to sell. Then

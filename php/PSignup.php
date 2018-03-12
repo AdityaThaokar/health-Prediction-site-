@@ -12,7 +12,7 @@ include('server.php');
 <script type="text/javascript" src="autocomplete.js"></script>
 </head>
 <body> 
-<div style="background: linear-gradient(rgba(26,26,26,0.2),rgba(26,26,26,0.7)),url('../images/background4.jpg ');background-size:contain,cover;background-attachment:scroll;">
+<div style="background: linear-gradient(rgba(26,26,26,0.2),rgba(26,26,26,0.7)),url('../images/background4.jpg ');background-size:contain,cover;background-attachment:fixed;">
 <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
 
  <div class="header" style="height:70px;background:#4dd0e1; ">
@@ -28,7 +28,7 @@ function googleTranslateElementInit() {
  <ul style="margin-left:1100px;"> 
   <li><a href="index.php"><i class="fa fa-home"></i>&nbsp;Home</a></li>
    <li><a href="contact.php"><i class="fa fa-phone"></i>&nbsp;Contact</a></li>
- </div> <br><br>
+ </div> <br><br><br><br>
  <div class="Signup" style="margin-left: 25%;margin-top: 2%;">
   <form method="POST"> <?php include('errors.php'); ?>
      <table cellspacing="5px" cellpadding="5px" align="center">
@@ -67,7 +67,7 @@ function googleTranslateElementInit() {
  </div> <br><br><br><br><br>
 
  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeMQgP036S3bA1yPmzGABcVN-COuYIHLc&libraries=places&callback=initAutocomplete" async defer></script>
-
+<br><br>
  <div class="Contact" id="contact1">
 <p style="color:white;">
 <img src="../images/toll.png" width="0px"><i class="fa fa-phone"></i>&nbsp;Toll Free 1800-274-3131

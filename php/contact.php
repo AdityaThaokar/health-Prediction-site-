@@ -18,7 +18,7 @@ input[type=submit]:hover{
 }
 </style>
 <body> 
-<div style="background: linear-gradient(rgba(26,26,26,0.2),rgba(26,26,26,0.7)),url('../images/background9.jpg ');background-size:contain,cover;background-attachment:scroll;">
+<div style="background: linear-gradient(rgba(26,26,26,0.2),rgba(26,26,26,0.7)),url('../images/background9.jpg ');background-size:contain,cover;background-attachment:fixed;">
 <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
 
  <div class="header" style="height:70px;background:#4dd0e1; ">

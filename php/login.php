@@ -12,7 +12,7 @@
 <title>Login</title>
 </head>
 <body>
-<div style="background: linear-gradient(rgba(26,26,26,0.2),rgba(26,26,26,0.7)),url('../images/background6.jpg ');background-size:contain,cover;background-attachment:scroll;">
+<div style="background: linear-gradient(rgba(26,26,26,0.2),rgba(26,26,26,0.7)),url('../images/background6.jpg ');background-size:contain,cover;background-attachment:fixed;">
 <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
 
  <div class="header" style="height:70px;background:#4dd0e1; ">
@@ -62,7 +62,7 @@ function googleTranslateElementInit() {
 <img src="../images/email.png" width="0px"><i class="fa fa-envelope"></i>&nbsp;DigitalKisaan@service.com
 <img src="../images/franchize.png" width="0px"><i class="fa fa-handshake-o"></i>&nbsp;Franchise
 </p>
-<h4 >Copyright © 2017 DigitalKisaan.com. All rights reserved.</h4>
+<h4>Copyright © 2017 DigitalKisaan.com. All rights reserved.</h4>
 </div></body>
  </div>
 
