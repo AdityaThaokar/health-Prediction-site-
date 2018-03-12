@@ -75,7 +75,7 @@ session_start();
 				$_SESSION['email'] = $email;
 				$_SESSION['id'] = $arr['farmerid'];
 				$_SESSION['username'] = $arr['name'];
-				header('location: main.php');
+				header('location: symptoms.php');
 			}else {	
 				array_push($errors, "Wrong username/password combination");
 			}
