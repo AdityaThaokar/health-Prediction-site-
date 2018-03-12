@@ -61,16 +61,16 @@
 	height:500px;
 	width:auto;
 	background:#f2f2f2;
-	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+	
 }
 .slider {
   background-color:#f2f2f2;
   height:auto;
-  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+ 
 }
 .bigimage {
   background-color:#f2f2f2;
-  height:auto;box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+  height:auto;
 }
 
 
@@ -129,7 +129,7 @@ hr {
   50% { border-color: orange; }
 }
 .About {
-	-webkit-animation-delay:3s;
+	-webkit-animation-delay:1s;
 }
 .Start {
 	-webkit-animation-duration:1s;
@@ -215,8 +215,9 @@ function googleTranslateElementInit() {
 }
 </script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
- <ul style="margin-left:850px;"> 
+ <ul style="margin-left:800px;"> 
    <li><a href="index.php"><i class="fa fa-home"></i>&nbsp;Home</a></li>
+   <li><button type="button" onclick="smoothScroll(document.getElementById('service-area'))"><i class="fa fa-user "></i>&nbsp;Services</button></li>
    <li><button type="button" onclick="smoothScroll(document.getElementById('about'))"><i class="fa fa-info-circle"></i>&nbsp;About</button></li>
    <li><button type="button" onclick="smoothScroll(document.getElementById('contact'))"><i class="fa fa-phone"></i>&nbsp;Contact</button></li>
   <li ><a href="chat.php"><i class="fa fa-comments"></i>&nbsp;Chat</a></li>
@@ -224,8 +225,8 @@ function googleTranslateElementInit() {
  </div> 
 <div class="Start animated fadeInLeft">
 
-<h2>WELCOME TO MEDICARE</h2>
-<p>" We, at DigitalKisaan.com, are excited about making life simpler and grocery shopping a 
+<h2 style="font-family:Roboto;">WELCOME TO MEDICARE</h2>
+<p style="font-family:Roboto;">" We, at DigitalKisaan.com, are excited about making life simpler and grocery shopping a 
 breeze! Now you can buy organic food & grocery online at your leisure and from the comfort 
 of your home - no more standing in the long queues at ration shops, provision stores & supermarkets." 
 
@@ -234,6 +235,53 @@ of your home - no more standing in the long queues at ration shops, provision st
 <a href="./login.php">
 <input type="submit" value="Lets start"></a>
 </div></div></div> 
+	<div id="service-area" style="padding-top:50px;padding-bottom:50px;height:auto;">
+	<p style="font-size:30px;font-weight:bold;margin-left:600px;font-family:Roboto;color:#4dd0e1">Services</p><hr style="width:100px"></hr><br>
+                <div class="ptb-120">
+                    <div class="container">
+                        <div class="row text-center" >
+                            <div class="col-sm-6 col-md-3"> 
+                                <div class="single-item res-sm text-center" style="border-color:#4dd0e1;border-width:2px;border-radius:8px;padding:20px;border-style:solid;">
+                                    <div class="single-item-icon">
+                                        <i class="fa fa-heartbeat" style="font-size:40px"></i>
+                                    </div>
+                                    <h3 class="ht-pt">Diagnose</h3>
+                                    <p>There are many variati passages of Lorem Ipsum availat majority have suffered aou need</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <div class="single-item res-sm res-xs text-center" style="border-color:#4dd0e1;border-width:2px;border-radius:8px;padding:20px;border-style:solid;">
+                                    <div class="single-item-icon">
+                                        <i class="fa fa-plus" style="font-size:40px"></i>
+                                    </div>
+                                    <h3 class="ht-pt">Healthcare</h3>
+                                    <p>There are many variati passages of Lorem Ipsum availat majority have suffered aou need</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <div class="single-item text-center res" style="border-color:#4dd0e1;border-width:2px;border-radius:8px;padding:20px;border-style:solid;">
+                                    <div class="single-item-icon">
+                                        <i class="fa fa-hospital-o" style="font-size:40px"></i>
+                                    </div>
+                                    <h3 class="ht-pt">Medical</h3>
+                                    <p>There are many variati passages of Lorem Ipsum availat majority have suffered aou need</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <div class="single-item text-center" style="border-color:#4dd0e1;border-width:2px;border-radius:8px;padding:20px;border-style:solid;">
+                                    <div class="single-item-icon">
+                                        <i class="fa fa-wheelchair" style="font-size:40px"></i>
+                                    </div>
+                                    <h3 class="ht-pt">24/7 support</h3>
+                                    <p>There are many variati passages of Lorem Ipsum availat majority have suffered aou need</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
 <div class="slider"><br><br>
 <!-- @zone - hightlighted -->
 <!--Showshow-->
@@ -243,19 +291,19 @@ of your home - no more standing in the long queues at ration shops, provision st
          <section class="flexslider-wrapper">
             <div id="main-slider" class="flexslider" data-transition="fade" data-page-class="slider-full-width">
                <div class="slides">
-                  <div data-slide-alt="alt" data-slide-bg-stretch=true class="slide slide-bg" data-slide-bg="https://superfoodsrx.com/wp-content/uploads/2016/09/Diverticular-Disease-Nuts-Seeds-1.jpg">
+                  <div data-slide-alt="alt" data-slide-bg-stretch=true class="slide slide-bg" data-slide-bg="http://www.trbimg.com/img-58c1ff36/turbine/sd-me-military-drugs-20170309">
                      <div class="slide-caption">
                         <div class="row">
                            <div class="col-md-12">
                               <div class="slide-text">
-                                 <div class="slide-title">What is Digital Kisaan?</div>
+                                 <div class="slide-title">What is MediCare?</div>
                                  An online platform for purchase of agricultural inputs.
                               </div>
                            </div>
                         </div>
                      </div>
                   </div>
-                  <div data-slide-alt="alt" data-slide-bg-stretch=true class="slide slide-bg" data-slide-bg="https://countercurrents.org/wp-content/uploads/2017/10/seeds.jpg">
+                  <div data-slide-alt="alt" data-slide-bg-stretch=true class="slide slide-bg" data-slide-bg="https://fysioultra.files.wordpress.com/2015/10/remiss.jpg">
                      <div class="slide-caption">
                         <div class="row">
                            <div class="col-md-12">
@@ -267,7 +315,7 @@ of your home - no more standing in the long queues at ration shops, provision st
                         </div>
                      </div>
                   </div>
-                  <div data-slide-alt="alt" data-slide-bg-stretch=true class="slide slide-bg" data-slide-bg="https://img.aws.livestrongcdn.com/ls-article-image-673/ds-photo/getty/article/190/129/105661091.jpg">
+                  <div data-slide-alt="alt" data-slide-bg-stretch=true class="slide slide-bg" data-slide-bg="https://frenchdistrict.com/californie-sud/wp-content/uploads/sites/5/2014/03/dr-richard-horowitz-medecin-docteur-los-angeles-francais-west-hollywood-featured.jpg">
                      <div class="slide-caption">
                         <div class="row">
                            <div class="col-md-12">
@@ -288,8 +336,8 @@ of your home - no more standing in the long queues at ration shops, provision st
 <br><br><br>
     <div class="About animated zoomIn" id="about">
 	<div style="width:1200;margin-left:auto;margin-right:auto;">
-		<p style="font-size:30px;font-weight:bold;margin-left:550px;font-family:Roboto;color:#4dd0e1">About</p>
-<h5 style="font-size:20px;font-family:Roboto;">The system provides two login options ,one for farmers and the
+		<p style="font-size:30px;font-weight:bold;margin-left:550px;font-family:Roboto;color:#4dd0e1">About</p><hr style="width:100px"></hr>
+<h5 style="font-size:14px;font-family:Roboto;"><p style="font-size:44px;">...</p>The system provides two login options ,one for farmers and the
 another for the wholesaler. All the user details and passwords are
 stored securely in the database. The wholesaler is provided with the
 option of uploading the products which he/she wish to sell. Then
@@ -310,12 +358,12 @@ submit his queries or make complaints to the wholesalers. <br><br>
 The system provides list of nearest wholesalers and
 option of delivery of inputs if the store is too far away.It will also provide
 customer care service for proper utilization of products they are buying. The
-system features translate function for easy understanding of text in the portal.</h5>
+system features translate function for easy understanding of text in the portal.<p style="font-size:44px;margin-left:1100">...</p></h5>
  </div>
 		<br><br><br>
 	</div>
 	<div class="afterslide">
-	<img align="middle"src="../images/farmer1.jpg" height="300"><br><br><hr></hr><p align="center">
+	<img align="middle" src="https://wallpaper.wiki/wp-content/uploads/2017/04/wallpaper.wiki-Modern-generation-doctor-girl-wallpaper-PIC-WPB009366.jpg" height="300"><br><br><hr></hr><p align="center">
 	 “The ultimate goal of farming is not the growing of crops, but the cultivation and perfection of human beings.”
 	  <br><br>
  <font size="2px">― Masanobu Fukuoka, The One-Straw Revolution</font>

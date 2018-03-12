@@ -4,6 +4,7 @@
 	<title>Chat</title>
 	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" /> 
 	 <link rel="stylesheet" type="text/css" href="../css/main.css">
+	 <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 <link rel="stylesheet" type="text/css" href="../css/index.css">
 <link rel="stylesheet" type="text/css" href="../css/wprofile.css">
 <link rel="stylesheet" type="text/css" href="../css/search.css">
@@ -29,7 +30,7 @@
 }
 .sendmsg input[type=submit]:hover{
 	color:white;
-	background-color:#1eaa83;
+	background-color:#4dd0e1;
 
 }
 .sendmsg{
@@ -62,16 +63,12 @@ h2{
 	</style>
 </head>
 <body>
-<body style="background:#f4f5f7;"> 
-<div class="header" style="height:80px;box-shadow: 1px 2px 4px 0px #4e4e4f;">
- <p><img src="../images/kisaanlogo.png" width="40px" >Digital Kisaan
- </p>
- <ul style="margin-left:800px;"> 
-   <li><a href="logout.php"><i class="fa fa-sign-out"></i>&nbsp;Log out</a></li>
- <li><a href="index.php"><i class="fa fa-home"></i>&nbsp;Home</a></li>
-  <li><a href="About.php"><i class="fa fa-info-circle"></i>&nbsp;About</a></li>
-   <li><a href="contact.php"><i class="fa fa-phone"></i>&nbsp;Contact</a></li>
-  <li><a href="current.php"><i class="fa fa-cloud"></i>&nbsp;Weather</a></li></div> 
+<div style="background: linear-gradient(rgba(26,26,26,0.2),rgba(26,26,26,0.7)),url('../images/background2.png ');background-size:contain,cover;background-attachment:scroll;">
+<a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
+
+ <div class="header" style="height:70px;background:#4dd0e1; ">
+ <p style="font-size:20px;color:white"><i class="fa fa-stethoscope"></i>  MediCare</p>
+ <div id="google_translate_element" style="margin-left:1170px;"></div>
 
 <script type="text/javascript">
 function googleTranslateElementInit() {
@@ -79,8 +76,11 @@ function googleTranslateElementInit() {
 }
 </script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<div id="google_translate_element" style="margin-left:1170px;"></div>
-<h2   align="center">Chat Room</h2>
+ <ul style="margin-left:1100px;"> 
+   <li><a href="index.php"><i class="fa fa-home"></i>&nbsp;Home</a></li>
+   <li><a href="contact.php"><i class="fa fa-phone"></i>&nbsp;Contact</a></li>
+ </div>
+<h2   align="center" style="color:white;">Chat Room</h2>
 <form action="process.php" id="form" method="post" name="form" style="margin-top: 5%;" >
 <?php
 session_start();
@@ -120,6 +120,14 @@ echo "</table>";
 <form action="logout.php" style="float:right">
 	<input type="submit" style="background:#d62626;width:80px;padding:5px;font-size:15px;border-radius:5px;border:none;font-family: sans-serif;text-align: center;color:white;"value="Logout" name="submit" id="submit" value="logout" >
 	</form>
+</div><br><br><br><br><br><br><br><br><br>
+   <div class="Contact" id="contact1">
+<p style="color:white;">
+<img src="../images/toll.png" width="0px"><i class="fa fa-phone"></i>&nbsp;Toll Free 1800-274-3131
+<img src="../images/email.png" width="0px"><i class="fa fa-envelope"></i>&nbsp;MediCare@service.com
+<img src="../images/franchize.png" width="0px"><i class="fa fa-handshake-o"></i>&nbsp;Franchise
+</p>
+<h4 align="center">Copyright © 2018 MediCare.com. All rights reserved.</h4>
 </div>
 </body>
 
