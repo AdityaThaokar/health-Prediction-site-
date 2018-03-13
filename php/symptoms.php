@@ -23,7 +23,6 @@
 <body>
   <div class="bgcolor">
     <label class="demo-label">Enter The Symptoms : </label><br/> <form method="POST"><input type="text" name="txtCountry" id="txtCountry" class="typeahead"/></form>
-    <?php echo $_POST['txtCountry']; ?>
   </div>
 </body>
 <script>

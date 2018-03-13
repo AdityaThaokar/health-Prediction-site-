@@ -98,7 +98,6 @@ session_start();
 			$arr=mysqli_fetch_array($results);
 			if (mysqli_num_rows($results) == 1) {
 				$_SESSION['email'] = $emailw;
-				$_SESSION['location'] = $arr['location'];
 				$_SESSION['username'] = $arr['name'];
 				header('location: wprofile.php');
 			}else {	

@@ -47,9 +47,9 @@ function googleTranslateElementInit() {
     <div class="login animated fadeInUp">
      <p align="center"> Sign in as Doctor </p>
      <form id="form" name="fForm" action="login.php" onsubmit="return validateFormf()" method="post">
-     <input type="text" placeholder="Enter Email Id" name="email"><br><br>
-   <input type="password" placeholder="Enter password" name="password"><br><br>
-     <input  type="submit" value="login" name="login">
+     <input type="text" placeholder="Enter Email Id" name="emailw"><br><br>
+   <input type="password" placeholder="Enter password" name="passwordw"><br><br>
+     <input  type="submit" value="login" name="loginw">
    </form>
    <div class="footr">
      <p>New user ? Click <a href="./DSignup.php">here</a> to create an account</p>  
