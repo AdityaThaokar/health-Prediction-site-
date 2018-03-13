@@ -46,7 +46,12 @@ function googleTranslateElementInit() {
    <li><a href="contact.php"><i class="fa fa-phone"></i>&nbsp;Contact</a></li>
  </div>
   <div class="container">
-    <label class="demo-label">Enter The Symptoms : </label><br/> <form method="POST"><input type="text" name="txtCountry" id="txtCountry" class="typeahead"/></form>
+    <label class="demo-label">Enter The Symptom : </label><br/> 
+    <form method="POST" action="find.php">
+      <input type="text" name="txtCountry" id="txtCountry" class="typeahead"/>
+      <br><br>
+      <input type="button" name="find" value="Find The Disease">
+    </form>
   </div><br><br><br><br>
   <div class="Contact" id="contact1">
 <p style="color:white;">
