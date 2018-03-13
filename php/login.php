@@ -57,13 +57,13 @@ function googleTranslateElementInit() {
    </div>
 
  </div><br><br><br><br><br><br><br><br><br><br>
- <div class="Contact" id="contact1">
+<div class="Contact" id="contact1">
 <p style="color:white;">
 <img src="../images/toll.png" width="0px"><i class="fa fa-phone"></i>&nbsp;Toll Free 1800-274-3131
-<img src="../images/email.png" width="0px"><i class="fa fa-envelope"></i>&nbsp;DigitalKisaan@service.com
+<img src="../images/email.png" width="0px"><i class="fa fa-envelope"></i>&nbsp;MediCare@service.com
 <img src="../images/franchize.png" width="0px"><i class="fa fa-handshake-o"></i>&nbsp;Franchise
 </p>
-<h4>Copyright © 2017 DigitalKisaan.com. All rights reserved.</h4>
+<h4 >Copyright © 2018 MediCare.com. All rights reserved.</h4>
 </div></body>
  </div>
 

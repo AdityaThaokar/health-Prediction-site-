@@ -12,6 +12,11 @@
 		<link rel="stylesheet" type="text/css" href="../css/index.css">
         <script type="text/javascript" src="autocomplete.js"></script>
 	</head>
+	<style>
+	.flex-container {
+  display: flex;
+}
+	</style>
 	<body>
 	
 	<div style="background: #333333 ">
