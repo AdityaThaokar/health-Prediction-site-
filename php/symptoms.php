@@ -50,8 +50,10 @@ function googleTranslateElementInit() {
     <form method="POST" action="find.php">
       <input type="text" name="txtCountry" id="txtCountry" class="typeahead"/>
       <br><br>
-      <input type="button" name="find" value="Find The Disease">
+      <input type="submit" name="find" value="Find The Disease">
+      <?php echo $_SESSION['dis']; ?>
     </form>
+
   </div><br><br><br><br>
   <div class="Contact" id="contact1">
 <p style="color:white;">
