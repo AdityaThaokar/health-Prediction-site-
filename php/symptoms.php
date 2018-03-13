@@ -22,7 +22,8 @@
 </head>
 <body>
   <div class="bgcolor">
-    <label class="demo-label">Search Country:</label><br/> <input type="text" name="txtCountry" id="txtCountry" class="typeahead"/>
+    <label class="demo-label">Enter The Symptoms : </label><br/> <form method="POST"><input type="text" name="txtCountry" id="txtCountry" class="typeahead"/></form>
+    <?php echo $_POST['txtCountry']; ?>
   </div>
 </body>
 <script>
@@ -31,17 +32,19 @@
             source: function (query, result) {
                 $.ajax({
                     url: "auto.php",
-          data: 'query=' + query,            
+                    data: 'query=' + query,            
                     dataType: "json",
                     type: "POST",
                     success: function (data) {
-            result($.map(data, function (item) {
-              return item;
+                    result($.map(data, function (item) {
+                    return item;
                         }));
                     }
                 });
             }
         });
+
+
     });
 </script>
 </html>
