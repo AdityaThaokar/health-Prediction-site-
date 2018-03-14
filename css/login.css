@@ -84,11 +84,14 @@
 
 .login input[type=text]
 {
-	width:300px;
+	width:500px;
 	padding:10px;
 	font-size:15px;
 	border-radius:5px;
-	border:none;
+	border-style:none;
+	background:none;
+	border-bottom-style:solid;
+	border-bottom-color:#4dd0e1;
 }
 .login input[type=password]
 {
@@ -100,15 +103,17 @@
 }
 .login input[type=submit]
 {
-	width:100%;
-	padding:10px;
-	font-size:15px;
+	width:auto;
+	padding:7px;
+	font-size:13px;
 	border-radius:5px;
 	border:none;
+	color:gray;
 	font-family: Roboto;
 	text-align: center;
 	margin:auto;
     display:block;
+	background-color:white;
 }
 .login input[type=submit]:hover{
 	color:white;
@@ -182,14 +187,17 @@
 }
 .SignUp input[type=submit]
 {
-	width:100%;
-	padding:10px;
-	font-size:15px;
+	width:auto;
+	padding:7px;
+	font-size:13px;
 	border-radius:5px;
 	border:none;
+	color:gray;
 	font-family: Roboto;
+	text-align: center;
 	margin:auto;
-   display:block;
+    display:block;
+	background-color:white;
 }
 .SignUp input[type=submit]:hover{
 	color:white;

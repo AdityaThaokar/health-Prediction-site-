@@ -12,6 +12,21 @@ include('server.php');
 <title>Signup</title>
 <script type="text/javascript" src="autocomplete.js"></script>
 </head>
+<style>
+.SignUp input[type=submit]
+{
+	width:100%;
+	padding:10px;
+	font-size:15px;
+	border-radius:5px;
+	border:none;
+	color:gray;
+	font-family: Roboto;
+	text-align: center;
+	margin:auto;
+    display:block;
+}
+</style>
 <body> 
 <div style="background: linear-gradient(rgba(26,26,26,0.2),rgba(26,26,26,0.7)),url('../images/background61.jpg ');background-size:contain,cover;background-attachment:fixed;">
 <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
