@@ -50,10 +50,14 @@ function googleTranslateElementInit() {
     <form method="POST" action="find.php">
       <input type="text" name="txtCountry" id="txtCountry" class="typeahead"/>
       <br><br>
+       <input type="text" name="txtCountry" id="txtCountry1" class="typeahead"/>
+      <br><br>
+       <input type="text" name="txtCountry" id="txtCountry2" class="typeahead"/>
+      <br><br>
+       <input type="text" name="txtCountry" id="txtCountry3" class="typeahead"/>
+      <br><br>
       <input type="submit" name="find" value="Find The Disease">
-      <?php echo $_SESSION['dis']; ?>
     </form>
-
   </div><br><br><br><br>
   <div class="Contact" id="contact1">
 <p style="color:white;">
@@ -82,6 +86,53 @@ function googleTranslateElementInit() {
             }
         });
 
+        $('#txtCountry1').typeahead({
+            source: function (query, result) {
+                $.ajax({
+                    url: "auto.php",
+                    data: 'query=' + query,            
+                    dataType: "json",
+                    type: "POST",
+                    success: function (data) {
+                    result($.map(data, function (item) {
+                    return item;
+                        }));
+                    }
+                });
+            }
+        });
+
+$('#txtCountry2').typeahead({
+            source: function (query, result) {
+                $.ajax({
+                    url: "auto.php",
+                    data: 'query=' + query,            
+                    dataType: "json",
+                    type: "POST",
+                    success: function (data) {
+                    result($.map(data, function (item) {
+                    return item;
+                        }));
+                    }
+                });
+            }
+        });
+
+$('#txtCountry3').typeahead({
+            source: function (query, result) {
+                $.ajax({
+                    url: "auto.php",
+                    data: 'query=' + query,            
+                    dataType: "json",
+                    type: "POST",
+                    success: function (data) {
+                    result($.map(data, function (item) {
+                    return item;
+                        }));
+                    }
+                });
+            }
+        });
 
     });
 </script>
