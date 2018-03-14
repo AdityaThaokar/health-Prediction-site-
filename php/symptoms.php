@@ -50,11 +50,11 @@ function googleTranslateElementInit() {
     <form method="POST" action="find.php">
       <input type="text" name="txtCountry" id="txtCountry" class="typeahead"/>
       <br><br>
-       <input type="text" name="txtCountry" id="txtCountry1" class="typeahead"/>
+       <input type="text" name="txtCountry1" id="txtCountry1" class="typeahead"/>
       <br><br>
-       <input type="text" name="txtCountry" id="txtCountry2" class="typeahead"/>
+       <input type="text" name="txtCountry2" id="txtCountry2" class="typeahead"/>
       <br><br>
-       <input type="text" name="txtCountry" id="txtCountry3" class="typeahead"/>
+       <input type="text" name="txtCountry3" id="txtCountry3" class="typeahead"/>
       <br><br>
       <input type="submit" name="find" value="Find The Disease">
     </form>
