@@ -21,7 +21,6 @@
 	border-radius:5px;
 	border-style:none;
 	background:white;
-
 }
 
 </style>

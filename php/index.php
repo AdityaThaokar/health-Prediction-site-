@@ -215,13 +215,11 @@ function googleTranslateElementInit() {
 }
 </script>
 <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
- <ul style="margin-left:800px;"> 
+ <ul style="margin-left:940px;"> 
    <li><a href="index.php"><i class="fa fa-home"></i>&nbsp;Home</a></li>
    <li><button type="button" onclick="smoothScroll(document.getElementById('service-area'))"><i class="fa fa-user "></i>&nbsp;Services</button></li>
    <li><button type="button" onclick="smoothScroll(document.getElementById('about'))"><i class="fa fa-info-circle"></i>&nbsp;About</button></li>
    <li><button type="button" onclick="smoothScroll(document.getElementById('contact'))"><i class="fa fa-phone"></i>&nbsp;Contact</button></li>
-  <li ><a href="chat.php"><i class="fa fa-comments"></i>&nbsp;Chat</a></li>
-  <li ><a href="videos.php"><i class="fa fa-youtube-play"></i>&nbsp;Health Tips</a></li>
  </div> 
 <div class="Start animated fadeInLeft">
 
