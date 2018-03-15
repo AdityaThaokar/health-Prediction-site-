@@ -13,18 +13,15 @@
 <title>Login</title>
 </head>
 <style>
-.login input[type=submit]
+.login input[type=text]
 {
 	width:100%;
 	padding:10px;
 	font-size:15px;
 	border-radius:5px;
-	border:none;
-	color:gray;
-	font-family: Roboto;
-	text-align: center;
-	margin:auto;
-    display:block;
+	border-style:none;
+	background:white;
+
 }
 
 </style>

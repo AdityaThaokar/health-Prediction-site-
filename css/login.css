@@ -84,14 +84,13 @@
 
 .login input[type=text]
 {
-	width:500px;
+	width:100%;
 	padding:10px;
 	font-size:15px;
 	border-radius:5px;
 	border-style:none;
 	background:none;
-	border-bottom-style:solid;
-	border-bottom-color:#4dd0e1;
+
 }
 .login input[type=password]
 {
